@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
       - name: wooless
-        image:  asia.gcr.io/$PROJECT_ID/production/wooless:$SHORT_SHA
+        image:  asia.gcr.io/$PROJECT_ID/production/aden:$SHORT_SHA
         imagePullPolicy: Always
         ports:
         - containerPort: 80
@@ -90,7 +90,7 @@ spec:
 apiVersion: networking.gke.io/v1beta2
 kind: ManagedCertificate
 metadata:
-  name: wooless
+  name: aden
   namespace: production
 spec:
   domains:
