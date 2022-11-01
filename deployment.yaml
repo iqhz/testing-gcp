@@ -67,12 +67,12 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: wooless
+  name: load-prod
   namespace: production
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: wooless
+    kubernetes.io/ingress.global-static-ip-name: load-prod
     kubernetes.io/ingress.allow-http: "false"
-    networking.gke.io/managed-certificates: wooless
+    networking.gke.io/managed-certificates: aden
 spec:
   rules:
     - host: app.kodecloud.tech
